@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "lint": "standard",
-    "start": "micro api.js"
+    "start": "micro api.js",
+    "test": "ava test/**-test.js"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -24,6 +25,7 @@
     "micro": "^8.0.3"
   },
   "devDependencies": {
+    "ava": "^0.22.0",
     "babel-eslint": "^7.2.3",
     "standard": "^10.0.3"
   }
