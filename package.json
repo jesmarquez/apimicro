@@ -1,0 +1,23 @@
+{
+  "name": "apimicro",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "micro api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesmarquez/apimicro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesmarquez/apimicro/issues"
+  },
+  "homepage": "https://github.com/jesmarquez/apimicro#readme",
+  "dependencies": {
+    "micro": "^8.0.3"
+  }
+}
