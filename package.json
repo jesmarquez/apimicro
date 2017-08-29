@@ -22,11 +22,17 @@
   },
   "homepage": "https://github.com/jesmarquez/apimicro#readme",
   "dependencies": {
-    "micro": "^8.0.3"
+    "babel-runtime": "^6.26.0",
+    "http-hash": "^2.0.0",
+    "micro": "^8.0.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "uuid-base62": "^0.1.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
     "babel-eslint": "^7.2.3",
-    "standard": "^10.0.3"
+    "standard": "^10.0.3",
+    "test-listen": "^1.0.2"
   }
 }
