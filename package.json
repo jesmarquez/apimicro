@@ -52,7 +52,10 @@
   "devDependencies": {
     "ava": "^0.22.0",
     "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.6.0",
     "babel-register": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "standard": "^10.0.3",
     "test-listen": "^1.0.2"
   }
