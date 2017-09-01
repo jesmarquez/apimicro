@@ -40,8 +40,6 @@ test('GET /:username', async t => {
   let user = fixtures.getUser()
   let url = t.context.url
 
-  user.avatar = 'gravatar.url(user.email)'
-
   let options = {
     method: 'GET',
     uri: `${url}/${user.username}`,
@@ -54,4 +52,19 @@ test('GET /:username', async t => {
   delete user.password
 
   t.deepEqual(body, user)
+})
+
+test('GET /usuarios', async t => {
+  let listUsers = fixtures.getUsers()
+  let url = t.context.url
+
+  let options = {
+    method: 'GET',
+    uri: `${url}/usuarios`,
+    json: true
+  }
+
+  let body = await request(options)
+
+  t.deepEqual(body, listUsers)
 })

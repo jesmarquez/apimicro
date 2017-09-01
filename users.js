@@ -31,12 +31,19 @@ hash.set('GET /:username', async function getUser (req, res, params) {
 
   await db.connect()
   let user = await db.getUser(username)
-  user.avatar = 'gravatar.url(user.email)'
 
   delete user.email
   delete user.password
 
   send(res, 200, user)
+})
+
+hash.set('GET /usuarios', async function getUsers (req, res, params) {
+  await db.connect()
+  let listUsers = await db.getUsers()
+  await db.disconnect()
+  res.setHeader('Access-Control-Allow-Origin', '*')
+  send(res, 200, listUsers)
 })
 
 export default async function main (req, res) {
